@@ -1,3 +1,2 @@
-<IfModule dir_module>
-    DirectoryIndex /src/index.html
-</IfModule>
+RewriteEngine On
+DirectoryIndex /dist/index.html
