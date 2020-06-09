@@ -1,3 +1,1 @@
-<IfModule dir_module>
-    DirectoryIndex src/index.html
-</IfModule>
+DirectoryIndex dist/index.html
