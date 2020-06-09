@@ -1,2 +1,2 @@
 RewriteEngine On
-DirectoryIndex ./dist/index.html
+DirectoryIndex dist/index.html
