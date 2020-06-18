@@ -374,6 +374,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 40px 0;
     }
     &-blur {
         background-color: #061e37;
@@ -403,9 +404,10 @@ body {
         width: 760px;
     }
     &__item {
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
         align-items: center;
+        padding: 10px 0;
         & img {
             width: 60px;
             height: 60px;

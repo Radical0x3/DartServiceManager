@@ -23,5 +23,6 @@ $(document).ready(function() {
         arrows: true,
         vertical: true,
         verticalSwiping: true,
+        slidesToShow: 2,
     });
 })
