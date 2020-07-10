@@ -19,15 +19,47 @@
         height: 23px;
         &.slick-prev {
             top: 0;
-            left: 50%;
+            left: 55%;
             transform: rotate(90deg);
             background: url('../img/sl-arrow_l.svg') 0 0 /100% no-repeat;
+            @media (max-width: 1255px) {
+                left: 50%;
+            }
         }
         &.slick-next {
             bottom: 0;
-            left: 50%;
+            left: 55%;
             transform: rotate(90deg);
             background: url('../img/sl-arrow_r.svg') 0 0 /100% no-repeat;
+            @media (max-width: 1255px) {
+                left: 50%;
+            }
+        }
+    }
+    @media (max-width: 1255px) {
+        padding: 20px 0;
+    }
+}
+
+.team__slider {
+    position: relative;
+    padding: 33px 0;
+    min-width: 0;
+    max-width: 600px;
+    & .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    & .slick-list {
+        overflow: hidden;
+    }
+    & .slick-slide {
+        display: flex;
+        justify-content: center;
+        &.current {
+            & .team__slider-item {
+                opacity: 1;
+            }
         }
     }
 }

@@ -133,6 +133,10 @@ const plugins = () => {
                 {
                     from: path.resolve(__dirname, 'src/img/reviews-bg.png'),
                     to: path.resolve(__dirname, 'dist/img')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img/team-member.png'),
+                    to: path.resolve(__dirname, 'dist/img')
                 }
             ]
         }),
