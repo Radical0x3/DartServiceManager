@@ -1,5 +1,6 @@
 @import "nullstyle.scss";
 @import "slick.scss";
+
 %flex-container-sb {
   display: flex;
   justify-content: space-between;
@@ -20,13 +21,16 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     transition: color 0.3s linear, background-color 0.3s linear;
+
     a {
       color: #061e37;
       text-transform: uppercase;
       font-family: Roboto;
     }
+
     &:hover {
       background-color: #061e37;
+
       a {
         color: #fff;
       }
@@ -43,6 +47,8 @@
 body {
   font-size: 15px;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+
   @media (max-width: 867px) {
     &.lock {
       overflow: hidden;
@@ -62,6 +68,7 @@ body {
   top: 0;
   left: 0;
   z-index: 50;
+
   &::before {
     content: "";
     position: absolute;
@@ -74,6 +81,7 @@ body {
       top: 0;
     }
   }
+
   &__body {
     max-width: 100%;
     margin: 0 auto;
@@ -88,6 +96,7 @@ body {
       top: 0;
     }
   }
+
   &__logo {
     height: 27px;
     position: relative;
@@ -95,18 +104,22 @@ body {
     display: flex;
     color: #fff;
     text-transform: uppercase;
+
     h2 {
       width: 140px;
     }
+
     img {
       max-width: 100%;
       padding-right: 10px;
     }
+
     &:hover {
       color: #061e37;
       transition: color 0.3s linear;
     }
   }
+
   &__burger {
     display: none;
     @media (max-width: 867px) {
@@ -145,10 +158,12 @@ body {
         span {
           transform: scale(0);
         }
+
         &::before {
           transform: rotate(45deg);
           top: 9px;
         }
+
         &::after {
           transform: rotate(-45deg);
           bottom: 9px;
@@ -156,21 +171,26 @@ body {
       }
     }
   }
+
   &__list {
     display: flex;
     position: relative;
     z-index: 2;
+
     li {
       list-style: none;
       margin: 0 0 0 45px;
+
       &:last-child {
         display: none;
       }
     }
+
     @media (max-width: 867px) {
       display: block;
       li {
         margin: 0 0 20px 0;
+
         &::after {
           display: block;
           width: 100%;
@@ -180,40 +200,48 @@ body {
           position: absolute;
           left: -10px;
         }
+
         &:last-child {
           display: block;
         }
       }
     }
   }
+
   &__link {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     opacity: 1;
+
     &:hover {
       color: #061e37;
       transition: color 0.3s linear;
     }
+
     @media (max-width: 867px) {
       font-size: 24px;
     }
   }
+
   &-btn {
     color: #fff;
     padding: 5px 14px;
     border: 1px solid #fff;
     z-index: 4;
+
     &:hover {
       color: #061e37;
       background-color: #fff;
       transition: color 0.3s linear, background-color 0.3s linear;
     }
+
     @media (max-width: 867px) {
       display: none;
     }
   }
+
   @media (max-width: 867px) {
     position: fixed;
     &::before {
@@ -230,6 +258,7 @@ body {
       background-color: #0cb6bd;
       padding: 70px 10px 20px 10px;
       transition: all 0.3s ease 0s;
+
       &.active-nav {
         top: 0;
       }
@@ -241,11 +270,13 @@ body {
   background-image: url(../img/header_fill_img.png);
   background-size: cover;
   background-repeat: no-repeat;
+
   &-blur {
     background-color: #061e37;
     background-image: linear-gradient(-53deg, #00b8d4 0%, #1de9b6 100%);
     opacity: 0.9;
   }
+
   .intro {
     padding: 165px 0 185px;
     @media (max-width: 1250px) {
@@ -254,14 +285,18 @@ body {
     @media (max-width: 867px) {
       padding-top: 100px;
     }
+
     .container {
       @extend %flex-container-sb;
       @media (max-width: 1250px) {
         flex-direction: column;
       }
     }
+
     &__content {
       max-width: 580px;
+      position: relative;
+
       h1 {
         max-width: 480px;
         font-size: 55px;
@@ -281,6 +316,7 @@ body {
           font-size: 32px;
         }
       }
+
       p {
         font-size: 18px;
         line-height: 35px;
@@ -293,19 +329,23 @@ body {
           font-size: 14px;
         }
       }
+
       @media (max-width: 1250px) {
         max-width: 700px;
         margin-bottom: 20px;
       }
     }
+
     &__buttons {
       display: flex;
       @extend %button;
+
       button {
         &:first-child {
           margin-right: 30px;
         }
       }
+
       @media (max-width: 1250px) {
         justify-content: center;
       }
@@ -313,12 +353,14 @@ body {
         flex-direction: column;
         button {
           margin: 0 auto;
+
           &:first-child {
             margin: 0 auto 10px;
           }
         }
       }
     }
+
     &__video {
       max-width: 100%;
       height: auto;
@@ -327,6 +369,8 @@ body {
       background-repeat: no-repeat;
       background-color: #ffffff;
       @extend %flex-container-c;
+      position: relative;
+
       &-blur {
         width: 600px;
         height: 320px;
@@ -340,19 +384,23 @@ body {
           max-height: 250px;
         }
       }
+
       &-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         a {
           padding: 23px 25px;
           background-color: #061e37;
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           border-radius: 5px;
+
           .icon {
             @include icon(10px, 12px, #fff);
           }
         }
+
         h4 {
           font-size: 12px;
           font-weight: 700;
@@ -360,6 +408,7 @@ body {
           padding-top: 22px;
         }
       }
+
       @media (max-width: 620px) {
         max-width: 100%;
         max-height: 100%;
@@ -387,6 +436,7 @@ body {
       padding-top: 40px;
     }
   }
+
   &__element {
     width: 345px;
     display: flex;
@@ -394,31 +444,39 @@ body {
     align-items: center;
     text-align: center;
     padding: 0 10px;
+
+
     .icon {
       @include icon(68px, 70px, #b388ff);
       margin-bottom: 25px;
+
       svg {
         width: 100%;
         height: 100%;
       }
     }
+
     &:nth-child(2) {
       .icon {
         @include icon(58px, 80px, #80d8ff);
         margin-bottom: 20px;
       }
+
       @media (max-width: 710px) {
         padding-top: 20px;
       }
     }
+
     &:last-child {
       .icon {
         @include icon(68px, 70px, #ea80fc);
       }
+
       @media (max-width: 1072px) {
         padding-top: 20px;
       }
     }
+
     h3 {
       font-size: 20px;
       color: #061e37;
@@ -426,27 +484,32 @@ body {
       line-height: 25px;
       padding-bottom: 20px;
     }
+
     p {
       color: #78909c;
       line-height: 20px;
     }
   }
+
   &__button {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
+
     button {
       width: 150px;
       height: 55px;
       background-color: #1de9b6;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
       border-radius: 5px;
+
       a {
         color: #ffffff;
         font-weight: 700;
         text-transform: uppercase;
       }
     }
+
     @media (max-width: 710px) {
       padding-bottom: 50px;
     }
@@ -458,23 +521,27 @@ body {
   padding-top: 100px;
   margin: 0 auto;
   text-align: center;
+
   h1 {
     font-size: 45px;
     color: #061e37;
     font-weight: 600;
     padding-bottom: 15px;
   }
+
   h2 {
     font-size: 25px;
     color: #b0bec5;
     font-weight: 600;
     padding-bottom: 5px;
   }
+
   p {
     color: #b0bec5;
     line-height: 25px;
     padding-top: 15px;
   }
+
   @media (max-width: 768px) {
     padding-top: 50px;
   }
@@ -491,26 +558,33 @@ body {
       justify-content: center;
     }
   }
+
   &__item {
     width: 25%;
+
     &:first-child {
       background-color: #80d8ff;
     }
+
     &:nth-child(2) {
       background-color: #82b1ff;
     }
+
     &:nth-child(3) {
       background-color: #b388ff;
     }
+
     &:last-child {
       background-color: #ea80fc;
     }
+
     &-inner {
       max-width: 210px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       padding: 45px 0;
+
       h3 {
         font-size: 20px;
         font-weight: 800;
@@ -518,12 +592,15 @@ body {
         color: #ffffff;
       }
     }
+
     .icon {
       @include icon(20px, 20px, #b388ff);
+
       svg {
         width: 100%;
         height: 100%;
       }
+
       &-wrap {
         width: 60px;
         height: 60px;
@@ -535,6 +612,7 @@ body {
         margin-right: 23px;
       }
     }
+
     @media (max-width: 950px) {
       width: 50%;
     }
@@ -548,19 +626,24 @@ body {
   .section-header {
     padding-bottom: 48px;
   }
+
   &__item {
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 20px;
+
     &:last-child {
       padding-bottom: 100px;
     }
+
     &-outer {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
       border-radius: 5px;
       padding: 20px;
+
       &.active {
         padding: 25px;
+
         .services__item-inner {
           display: flex;
           @media (max-width: 720px) {
@@ -569,22 +652,27 @@ body {
         }
       }
     }
+
     &-header {
       display: flex;
       justify-content: space-between;
+
       div {
         display: flex;
         align-items: center;
+
         img {
           width: 18px;
           height: 11px;
           margin-right: 25px;
         }
+
         svg {
           width: 18px;
           height: 14px;
           margin-right: 25px;
         }
+
         h4 {
           color: #061e37;
           font-weight: 700;
@@ -592,10 +680,12 @@ body {
         }
       }
     }
+
     &-inner {
       display: none;
       justify-content: space-between;
       padding-top: 25px;
+
       img {
         width: 250px;
         height: 150px;
@@ -606,6 +696,7 @@ body {
           margin: 0 auto;
         }
       }
+
       p {
         width: 470px;
         color: #061e37;
@@ -618,6 +709,7 @@ body {
       }
     }
   }
+
   &-btn {
     svg {
       width: 11px;
@@ -631,6 +723,7 @@ body {
   background: url("../img/reviews-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -640,19 +733,23 @@ body {
       display: block;
     }
   }
+
   &-blur {
     background-color: #061e37;
     background-image: linear-gradient(-53deg, #00b8d4 0%, #1de9b6 100%);
     opacity: 0.9;
   }
+
   &-lcolumn {
     max-width: 515px;
+
     h2 {
       font-size: 45px;
       font-weight: 600;
       color: #ffffff;
       padding: 47px 0 20px;
     }
+
     p {
       font-weight: 600;
       color: #fff;
@@ -662,54 +759,65 @@ body {
         padding-bottom: 25px;
       }
     }
+
     @extend %button;
+
     button {
       margin-bottom: 55px;
       @media (max-width: 1255px) {
         margin-bottom: 25px;
       }
     }
+
     @media (max-width: 1255px) {
       max-width: 700px;
       text-align: center;
       margin: 0 auto;
     }
   }
+
   &-rcolumn {
     max-width: 760px;
     @media (max-width: 1255px) {
       margin: 0 auto;
     }
   }
+
   &__item {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+
     & img {
       width: 60px;
       height: 60px;
       border-radius: 50%;
     }
   }
+
   &__content {
     max-width: 650px;
     background-color: #fff;
     opacity: 1;
     padding: 32px 65px 30px 30px;
+
     &-inner {
       max-width: 555px;
     }
+
     &-author {
       font-size: 18px;
       font-weight: 700;
       color: #061e37;
       line-height: 25px;
     }
+
     &-text {
       color: #78909c;
       line-height: 25px;
     }
+
     @media (max-width: 768px) {
       padding-right: 30px;
     }
@@ -724,6 +832,7 @@ body {
     margin: 0 auto;
     padding-bottom: 60px;
     height: 260px;
+
     img {
       &:last-child {
         @media (max-width: 500px) {
@@ -731,16 +840,20 @@ body {
         }
       }
     }
+
     & .active {
       opacity: 1;
+
       img {
         max-width: 160px;
         height: 160px;
       }
     }
+
     &-item {
       margin: 0 25px;
       opacity: 0.2;
+
       img {
         max-width: 100px;
         height: 100px;
@@ -748,6 +861,7 @@ body {
         transition: height 0.2s linear;
       }
     }
+
     @media (max-width: 500px) {
       flex-wrap: wrap;
       height: 375px;
@@ -757,10 +871,12 @@ body {
       height: 485px;
     }
   }
+
   &__resume {
     max-width: 645px;
     margin: 0 auto;
     text-align: center;
+
     h3 {
       font-size: 18px;
       line-height: 25px;
@@ -768,15 +884,18 @@ body {
       color: #061e37;
       padding-bottom: 20px;
     }
+
     p {
       color: #90a4ae;
       line-height: 25px;
       padding-bottom: 30px;
     }
+
     & .text-hide {
       display: none;
     }
   }
+
   &__social {
     max-width: 200px;
     display: flex;
@@ -784,9 +903,11 @@ body {
     align-items: center;
     margin: 0 auto;
     padding-bottom: 90px;
+
     a {
       width: 21px;
       height: 20px;
+
       svg {
         width: 100%;
         height: 100%;
@@ -794,12 +915,14 @@ body {
         line-height: 25px;
         font-family: icofont;
         font-size: 20px;
+
         &:hover {
           fill: #061e37;
           transition: fill 0.3s ease;
         }
       }
     }
+
     @media (max-width: 500px) {
       padding-bottom: 50px;
     }
@@ -808,16 +931,19 @@ body {
 
 .contact {
   background-color: #fafafa;
+
   &__form {
     max-width: 600px;
     margin: 0 auto;
     padding: 50px 0 100px;
+
     &-row {
       max-width: 600px;
       display: flex;
       justify-content: space-between;
       padding-bottom: 20px;
       color: #061e37;
+
       input {
         width: 280px;
         margin: 0 5px;
@@ -826,13 +952,16 @@ body {
           margin: 5px 0;
         }
       }
+
       @media (max-width: 600px) {
         display: block;
         padding-bottom: 0;
       }
     }
+
     .row-3 {
       padding: 5px 0 10px;
+
       textarea {
         width: 100%;
         height: 150px;
@@ -841,6 +970,7 @@ body {
         padding-top: 20px;
       }
     }
+
     input,
     textarea {
       height: 50px;
@@ -849,23 +979,29 @@ body {
       border-radius: 5px;
       padding: 0 20px;
     }
+
     &-btns {
       @extend %flex-container-sb;
+
       .checkbox {
         @extend %flex-container-sb;
+
         input {
           margin-right: 10px;
         }
+
         span {
           color: #061e37;
           font-weight: 500;
         }
       }
+
       input {
         width: 16px;
         height: 16px;
         border: 2px solid #061e37;
       }
+
       button {
         width: 130px;
         height: 50px;
@@ -873,6 +1009,7 @@ body {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         border-radius: 5px;
         background-color: #1de9b6;
+
         a {
           color: #fff;
         }
@@ -883,46 +1020,56 @@ body {
 
 .footer {
   background-color: #061e37;
+
   &__wrap {
     &-row {
       @extend %flex-container-sb;
+
       &:first-child {
         padding: 100px 0 55px;
         @media (max-width: 700px) {
           padding: 50px 0 20px;
         }
       }
+
       &:last-child {
         padding-bottom: 105px;
         @media (max-width: 700px) {
           padding-bottom: 50px;
         }
       }
+
       .logo {
         display: flex;
         color: #fff;
+
         img {
           margin-right: 10px;
           @media (max-width: 700px) {
             height: 40px;
           }
         }
+
         @media (max-width: 700px) {
           justify-content: center;
         }
       }
+
       a {
         padding-left: 50px;
         color: #fff;
         line-height: 25px;
         font-weight: 600;
+
         &:hover {
           text-decoration: underline;
         }
+
         @media (max-width: 700px) {
           padding: 0;
         }
       }
+
       .circle {
         width: 6px;
         height: 6px;
@@ -933,11 +1080,13 @@ body {
           height: 10px;
         }
       }
+
       @media (max-width: 700px) {
         display: block;
       }
     }
   }
+
   &__nav {
     a {
       margin-left: 50px;
@@ -947,6 +1096,7 @@ body {
         line-height: 2;
       }
     }
+
     @media (max-width: 700px) {
       display: flex;
       justify-content: center;
@@ -954,10 +1104,12 @@ body {
       padding: 20px 0 0;
     }
   }
+
   &__links {
     display: flex;
     align-items: center;
     text-align: center;
+
     a {
       margin: 0 20px 0 0;
       padding-left: 0px;
@@ -965,19 +1117,23 @@ body {
         line-height: 2;
       }
     }
+
     div {
       margin: 0 20px 0 0;
     }
+
     @media (max-width: 700px) {
       justify-content: center;
       flex-wrap: wrap;
       padding-bottom: 20px;
-      
+
     }
   }
+
   &__icons {
     a {
       padding-left: 20px;
+
       svg {
         width: 21px;
         height: 20px;
@@ -989,18 +1145,22 @@ body {
           height: 30px;
         }
       }
+
       &:hover {
         text-decoration: none;
+
         svg {
           opacity: 1;
         }
       }
     }
+
     @media (max-width: 700px) {
       display: flex;
       justify-content: center;
     }
   }
+
   @media (max-width: 700px) {
     font-size: 20px;
   }
