@@ -3,8 +3,9 @@ import * as $ from 'jquery';
 import 'slick-carousel';
 import {gsap, Power1} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 if (process.env.NODE_ENV === 'development') {
   require('./index.html');
@@ -144,5 +145,35 @@ window.onload = function () {
       $("#users").text(startScore.score);
     }
   });
+  gsap.utils.toArray(".mobile__link").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(window, {duration: 1.5, scrollTo: e.target.getAttribute("href")})
+    })
+  })
+  gsap.utils.toArray(".footer__nav a").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      gsap.to(window, {duration: 1.5, scrollTo: e.target.getAttribute("href")})
+    })
+  })
 
+  document.querySelector(".button-up").addEventListener("click", function (e) {
+    e.preventDefault();
+    gsap.to(window, {duration: 1.5, scrollTo: e.target.getAttribute("href")})
+  })
+
+  $(window).scroll(function () {
+    toggleBtnUp();
+  })
+  toggleBtnUp();
+}
+
+function toggleBtnUp() {
+  let btnUp = $(".button-up");
+  if ($(window).scrollTop() > 200) {
+    btnUp.addClass("show");
+  } else {
+    btnUp.removeClass("show");
+  }
 }
