@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1283c574-f9a2-4ecc-a5f6-713dc675beab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/441ce4d13a4f17fa1209336f1faccde3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/5147a2992d2b66028c512631b0cff3f9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/86890a1acecd168394d7792fbbc754be.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/8db946ce8d9b129f1174f0d6373262cb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/912fd78d032a02fc8ace7804c5a94548.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/header_fill_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/person-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/person.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/reviews-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/reviews-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/reviews-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/services.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/sprite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/team-member.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/trending_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/video-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendors~main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendors~main.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +54,7 @@
       <workItem from="1608210633208" duration="36000" />
       <workItem from="1608210684362" duration="860000" />
       <workItem from="1608217373017" duration="8873000" />
-      <workItem from="1608488523925" duration="7920000" />
+      <workItem from="1608488523925" duration="7930000" />
     </task>
     <servers />
   </component>
