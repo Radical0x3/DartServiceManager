@@ -1,5 +1,6 @@
-@import "nullstyle.scss";
-@import "slick.scss";
+@import "nullstyle";
+@import "slick";
+@import "animation";
 
 %flex-container-sb {
   display: flex;
@@ -20,20 +21,18 @@
     background-color: #fff;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    transition: color 0.3s linear, background-color 0.3s linear;
-
-    a {
-      color: #061e37;
-      text-transform: uppercase;
-      font-family: Roboto;
-    }
+    transition: 0.3s linear;
+    color: #061e37;
+    text-transform: uppercase;
+    font-family: Roboto;
 
     &:hover {
-      background-color: #061e37;
+      color: #fff;
+      transition-delay: 0.3s;
+    }
 
-      a {
-        color: #fff;
-      }
+    &.btn {
+      transition-delay: 0.2s;
     }
   }
 }
@@ -179,10 +178,18 @@ body {
 
     li {
       list-style: none;
-      margin: 0 0 0 45px;
+      margin: 0 10px;
 
       &:last-child {
         display: none;
+      }
+
+      &:hover {
+        .mobile__link {
+          color: #061e37;
+          transition: color 0.3s linear;
+          transition-delay: 0.5s;
+        }
       }
     }
 
@@ -190,6 +197,7 @@ body {
       display: block;
       li {
         margin: 0 0 20px 0;
+        padding: 0;
 
         &::after {
           display: block;
@@ -209,16 +217,13 @@ body {
   }
 
   &__link {
+    display: block;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     opacity: 1;
-
-    &:hover {
-      color: #061e37;
-      transition: color 0.3s linear;
-    }
+    padding: 5px 20px;
 
     @media (max-width: 867px) {
       font-size: 24px;
@@ -230,11 +235,15 @@ body {
     padding: 5px 14px;
     border: 1px solid #fff;
     z-index: 4;
+    box-sizing: border-box;
+    transition: 0.3s linear;
 
     &:hover {
       color: #061e37;
-      background-color: #fff;
-      transition: color 0.3s linear, background-color 0.3s linear;
+    }
+
+    &::before {
+      width: calc(100% + 1px);
     }
 
     @media (max-width: 867px) {
@@ -296,6 +305,7 @@ body {
     &__content {
       max-width: 580px;
       position: relative;
+      left: -120%;
 
       h1 {
         max-width: 480px;
@@ -334,6 +344,10 @@ body {
         max-width: 700px;
         margin-bottom: 20px;
       }
+
+      @media (max-width: 867px) {
+        left: 0;
+      }
     }
 
     &__buttons {
@@ -370,6 +384,7 @@ body {
       background-color: #ffffff;
       @extend %flex-container-c;
       position: relative;
+      right: -120%;
 
       &-blur {
         width: 600px;
@@ -407,6 +422,10 @@ body {
           text-transform: uppercase;
           padding-top: 22px;
         }
+      }
+
+      @media (max-width: 867px) {
+        right: 0;
       }
 
       @media (max-width: 620px) {

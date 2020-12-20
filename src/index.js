@@ -75,8 +75,8 @@ window.onload = function () {
   let stats = $(".stats")[0];
 
   if (window.innerWidth > 866) {
-    gsap.from(content, {duration: 1.5, left: "-120%", ease: Power1.easeInOut});
-    gsap.from(video, {duration: 1.5, right: "-120%", ease: Power1.easeInOut});
+    gsap.to(content, {duration: 1.5, left: "0px", ease: Power1.easeInOut});
+    gsap.to(video, {duration: 1.5, right: "0px", ease: Power1.easeInOut});
 
     gsap.from($(".project-tool__element"), {
       scrollTrigger: {
